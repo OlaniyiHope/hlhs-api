@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use("/api/ad", adRoutes);
-
+console.log(adRoutes);
 app.use("/api/class", classRoute);
 app.use("/api/examlist", examlistRoute);
 app.use("/api/grade", gradeRoute);

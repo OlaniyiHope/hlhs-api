@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
+import cors from "cors";
 const connectDB = async () => {
+  app.use(cors());
   try {
     const conn = await mongoose.connect(
       "mongodb+srv://olaniyihoppee:take100@cluster0.fzjtw.mongodb.net/yoo?retryWrites=true&w=majority",

@@ -6,6 +6,10 @@ import {
   getallUsers,
   getuserClass,
   getuserClass2,
+  getuserClass3,
+  getuserClass4,
+  getuserClass5,
+  getuserClass6,
   getUsers,
   loginUser,
   register,
@@ -19,6 +23,10 @@ router.post("/login", loginUser);
 router.get("/getallusers", getallUsers);
 router.get("/clo", getuserClass);
 router.get("/clo2", getuserClass2);
+router.get("/clo3", getuserClass3);
+router.get("/clo4", getuserClass4);
+router.get("/clo5", getuserClass5);
+router.get("/clo6", getuserClass6);
 router.get("/class/:id/attendance", Class);
 router.get("/class/:id", allClass);
 router.delete("/delete/:id", deleteStudent);

@@ -243,3 +243,35 @@ export const getuserClass2 = async (req, res, next) => {
     next(err);
   }
 };
+export const getuserClass3 = async (req, res, next) => {
+  try {
+    const users = await Stu.find({ classname: "js3" });
+    res.status(200).json(users);
+  } catch (err) {
+    next(err);
+  }
+};
+export const getuserClass4 = async (req, res, next) => {
+  try {
+    const users = await Stu.find({ classname: "ss1 || SS1" });
+    res.status(200).json(users);
+  } catch (err) {
+    next(err);
+  }
+};
+export const getuserClass5 = async (req, res, next) => {
+  try {
+    const users = await Stu.find({ classname: "ss2 || SS2" });
+    res.status(200).json(users);
+  } catch (err) {
+    next(err);
+  }
+};
+export const getuserClass6 = async (req, res, next) => {
+  try {
+    const users = await Stu.find({ classname: "ss3 || SS3" });
+    res.status(200).json(users);
+  } catch (err) {
+    next(err);
+  }
+};

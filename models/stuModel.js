@@ -34,7 +34,6 @@ const StuSchema = new mongoose.Schema(
     },
     age: {
       type: String,
-      required: true,
     },
     email: {
       type: String,
@@ -42,7 +41,6 @@ const StuSchema = new mongoose.Schema(
     },
     registration_fees: {
       type: Number,
-      required: true,
     },
     password: {
       type: String,

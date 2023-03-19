@@ -253,7 +253,7 @@ export const getuserClass3 = async (req, res, next) => {
 };
 export const getuserClass4 = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "ss1 || SS1" });
+    const users = await Stu.find({ classname: "SS1" });
     res.status(200).json(users);
   } catch (err) {
     next(err);

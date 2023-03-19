@@ -12,9 +12,9 @@ import dotenv from "dotenv";
 import connectDB from "./config/db2.js";
 import cors from "cors";
 dotenv.config();
-
-connectDB();
 const app = express();
+connectDB();
+
 app.use(express.json());
 app.use(cors());
 app.use("/api/ad", adRoutes);

@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import cors from "cors";
 const connectDB = async () => {
+  const app = express();
   app.use(cors());
   try {
     const conn = await mongoose.connect(

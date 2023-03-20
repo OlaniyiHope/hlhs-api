@@ -229,7 +229,7 @@ export const getallUsers = async (req, res, next) => {
 };
 export const getuserClass = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "js1" });
+    const users = await Stu.find({ classname: "js1" || "Js1" || "JS1" });
     res.status(200).json(users);
   } catch (err) {
     next(err);
@@ -237,7 +237,7 @@ export const getuserClass = async (req, res, next) => {
 };
 export const getuserClass2 = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "js2" });
+    const users = await Stu.find({ classname: "js2" || "Js2" || "JS2" });
     res.status(200).json(users);
   } catch (err) {
     next(err);
@@ -245,7 +245,7 @@ export const getuserClass2 = async (req, res, next) => {
 };
 export const getuserClass3 = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "js3" });
+    const users = await Stu.find({ classname: "js3" || "Js3" || "JS3" });
     res.status(200).json(users);
   } catch (err) {
     next(err);
@@ -253,7 +253,7 @@ export const getuserClass3 = async (req, res, next) => {
 };
 export const getuserClass4 = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "SS1" });
+    const users = await Stu.find({ classname: "SS1" || "Ss1" || "ss1" });
     res.status(200).json(users);
   } catch (err) {
     next(err);
@@ -261,7 +261,7 @@ export const getuserClass4 = async (req, res, next) => {
 };
 export const getuserClass5 = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "ss2 || SS2" });
+    const users = await Stu.find({ classname: "ss2" || "SS2" || "Ss2" });
     res.status(200).json(users);
   } catch (err) {
     next(err);
@@ -269,7 +269,7 @@ export const getuserClass5 = async (req, res, next) => {
 };
 export const getuserClass6 = async (req, res, next) => {
   try {
-    const users = await Stu.find({ classname: "ss3 || SS3" });
+    const users = await Stu.find({ classname: "SS3" || "Ss3" || "ss3" });
     res.status(200).json(users);
   } catch (err) {
     next(err);
